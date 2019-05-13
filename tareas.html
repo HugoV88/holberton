@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mi pagina</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="https://ph-files.imgix.net/75aa6247-480b-460b-b31b-e1365169cd1b?auto=format" />
+    <link href="./assets/css/normalize.css" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  
+  <body class="works_on_smartphone">
+    
+    <header>
+      <div class="mobile-img">
+	<a href="https://www.holbertonschool.com" target="_blank">
+	  <img src="https://www.holbertonschool.com/holberton-logo.png" alt="logo" />
+	</a>
+      </div>
+      <nav id="barra">
+	<ul>
+	  <li><a href="/">Home</a></li>
+	  <li><a href="tweets.html">Tweets</a></li>
+	  <li><a href="game.html">Juego</a></li>
+	  <li><a href="tareas.html">Tareas</a></li>
+	  <li><a href="about.html">Sobre mí</a></li>
+	</ul>
+      </nav>
+      <div  id="icon" class="fas fa-bars mobile-btn">
+      </div>
+    </header>
+    <main class="contenido">
+      <article>
+	<h1 class="fast fadeIn">Lista de tareas</h1>
+	<div id="tarea" class="animacion fadeIn">
+	  <div id="tareas">
+	    <h2>Agrega tu tarea aquí:</h2>
+	    <form>
+	      <textarea id="task"  autofocus="autofocus"></textarea>
+	      <button>Agregar</button>
+	      <p style="font-size:2rem">
+		Las tareas que agregues en la lista quedarán guardadas por tiempo indefinido hasta que se borren del Caché.
+	      </p>
+	    </form>
+	  </div>
+	  <div id="lista">
+	    <h2>Lista</h2>
+	  </div>
+	</div>
+      </article>
+    </main>
+    <footer>
+      Made by <a href="https://twitter.com/vargashugo88" target="_blank">Hugo Vargas</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a> &copy; - 2019
+    </footer>
+    <script src="./assets/js/behavior.js"></script>
+    <script src="./assets/js/tareas.js"></script>
+  </body>
+</html>
+

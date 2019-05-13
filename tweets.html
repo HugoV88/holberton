@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mi pagina</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="https://ph-files.imgix.net/75aa6247-480b-460b-b31b-e1365169cd1b?auto=format" />
+    <link href="./assets/css/normalize.css" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  
+  <body class="works_on_smartphone">
+    
+    <header>
+      <div class="mobile-img">
+	<a href="https://www.holbertonschool.com" target="_blank">
+	  <img src="https://www.holbertonschool.com/holberton-logo.png" alt="logo" />
+	</a>
+      </div>
+      <nav id="barra" style="z-index:2">
+	<ul>
+	  <li><a href="/">Home</a></li>
+	  <li><a href="tweets.html">Tweets</a></li>
+	  <li><a href="game.html">Juego</a></li>
+	  <li><a href="tareas.html">Tareas</a></li>
+	  <li><a href="about.html">Sobre mí</a></li>
+	</ul>
+      </nav>
+      <div  id="icon" class="fas fa-bars mobile-btn">
+      </div>
+    </header>
+    <main class="flexa">
+      <article class="tw1">
+	<h1 class="fast fadeIn">Tweets</h1>
+	<div class="animacion fadeIn">
+	  <blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">Thank you so much <a href="https://twitter.com/holbertonschool?ref_src=twsrc%5Etfw">@holbertonschool</a> for the oportunity!! Greetings from Colombia</p>&mdash; Hugo Vargas (@vargashugo88) <a href="https://twitter.com/vargashugo88/status/1085249640537223168?ref_src=twsrc%5Etfw">15 de enero de 2019</a></blockquote>
+	  <div>
+	    <img id="smart_thumbnail" src="https://images-na.ssl-images-amazon.com/images/I/71m2NvJyIVL.png" alt="img">
+	  </div>
+	</div>
+      </article>
+      <aside class="tw2">
+	<div id="disqus_thread" style="width:100%" class="animacion fadeIn"></div>
+	
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </aside>
+    </main>
+    <footer>
+      Made by <a href="https://twitter.com/vargashugo88" target="_blank">Hugo Vargas</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a> &copy; - 2019
+    </footer>
+    <script src="./assets/js/behavior.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js"></script>
+    <script src="./assets/js/img.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+      
+      // Disqus
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://http-34-224-168-146-tweets-html.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      });
+      
+    </script>
+  </body>
+</html>
+

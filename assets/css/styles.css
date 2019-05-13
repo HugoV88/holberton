@@ -1,0 +1,371 @@
+/* Efectos */
+
+.animacion {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+	opacity: 0;
+    }
+    to {
+	opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+
+/* Principal */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    min-width:340px;
+    height:auto;
+    overflow-x:scroll;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E2E6EA;
+}
+
+header {
+    background-color: #23272B;
+    width: 100%;
+    min-height: 5.4rem;
+}
+
+#barra {
+    position: absolute;
+    margin: 0 auto;
+    min-width: 340px;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    top: 5.4rem;
+    right: 0;
+    z-index: 10;
+}
+
+#barra ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #23272B;
+}
+
+#barra ul li {
+    margin-left: 0rem;
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+    list-style: none;
+}
+
+#barra ul li:last-child {
+    margin-bottom: 2rem;
+}
+
+#barra ul li a {
+    color: #E2E6EA;
+    text-decoration: none;
+    font-size: 2.3rem;
+    transition: .4s;
+}
+
+#barra ul li a:hover {
+    color: #EB464A;
+    font-size: 2.8rem;
+}
+
+
+.barra-abre {
+    height: auto !important;
+    margin: -5px 0 !important;
+}
+
+.mobile-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #B7312C;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.mobile-btn:hover {
+    font-size: 3.4rem;
+    color: #EB464A;
+    transition: .4s;
+}
+
+.mobile-img img {
+    width: 16rem;
+}
+
+.contenido {
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Thasadith', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 300;
+    text-align: center;
+    display: inline-block;
+    margin: 2rem 0 2rem 0;
+}
+
+p {
+    font-family: 'Thasadith', sans-serif;
+    font-size: 3rem;
+    font-weight: light;
+    line-height: 3.5rem;
+    text-align: justify;
+    display: block;
+    margin: 2rem 0 2rem 0;
+}
+
+footer {
+    padding: 1.5rem ;
+    background-color: #23272B;
+    color: #E2E6EA;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 2rem;
+    font-weight: light;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #E2E6EA;
+}
+
+/*Juego*/
+#gameover {
+    display: none;
+}
+
+#aviso {
+    display: block;
+}
+
+/*Tareas*/
+
+
+h2 {
+    font-family: 'Thasadith', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+}
+
+div#lista {
+    flex: 1;
+    margin: 1 rem 5rem;
+    font-size: 2.5rem
+}
+
+a.borrar-tarea {
+    float: right;
+    cursor: pointer;
+}
+
+/*Tweets*/
+.flexa {
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    text-align: center;
+}
+
+article.tw1, aside.tw2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img#smart_thumbnail {
+    margin: 8rem auto;
+    width: 35rem;
+    cursor: pointer;
+}
+
+img.small {
+    width: 10rem!important;
+}
+
+/*Contacto*/
+i {
+    margin: 1rem;
+    margin-top: 5rem;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+@media (min-width:800px) {
+    /*Principal*/
+    #icon {
+	display: none;
+    }
+
+    #barra {
+	position: absolute;
+	width: auto;
+	height: 10%;
+	top: 0;
+	left: 180px;
+    }
+
+    #barra ul {
+	margin-top: .9rem;
+	flex-direction: row;
+	align-items: center;
+    }
+
+    #barra ul li {
+	margin-left: 2.5rem;
+    }
+
+    #barra ul li:last-child {
+	margin-top: 0;
+	margin-bottom: 0;
+    }
+
+    #barra ul li:first-child {
+	margin-left: 0;
+    }
+
+    .barra-abre {
+	margin-top: -.7rem;
+	height: auto !important;
+    }
+
+    .contenido {
+	width: 100%;
+	padding-right: 15rem;
+	padding-left: 15rem;
+    }
+
+    h1 {
+	font-family: 'Thasadith', sans-serif;
+	font-size: 8rem;
+	font-weight: 300;
+	text-align: left;
+    }
+
+    /*Juego*/
+    canvas {
+	margin-bottom: 10px;
+    }
+    
+    div#gameover {
+	text-align: center !important;
+	display: block;
+    }
+    
+    div#aviso {
+	display: none;
+    }
+
+    /*Tarea*/
+    div#tarea {
+	display: flex;
+	flex-direction: row;
+    }
+    
+    
+    div#tareas {
+	flex: 1;
+	margin: 1rem 5rem;
+    }
+    
+    div#lista {
+	flex: 1;
+	margin: 1 rem 5rem;
+	font-size: 2.5rem
+    }
+
+    /*Tweets*/
+    .flexa {
+	width: 100%;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2rem;
+	margin-bottom: 6rem;
+	display: flex;
+	flex-direction: row;
+	min-height: 100vh;
+    }
+    
+    article.tw1 {
+	flex: 2;
+	margin: 0 5rem;
+    }
+    
+    aside.tw2 {
+	flex: 1;
+    }
+
+    aside.tw2 p {
+	margin-bottom: 0;
+	font-size: 2rem;
+	font-weight: bold;
+    }
+
+}
+
+@media (min-width:1200px) {
+    #barra {
+	left: 20rem;
+    }
+}
